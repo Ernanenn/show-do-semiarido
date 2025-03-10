@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show do Semiárido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description"
+        content="Jogo de perguntas e respostas sobre o semiárido brasileiro. Teste seus conhecimentos sobre as tradições, história e curiosidades do semiárido brasileiro neste quiz interativo e divertido. Compartilhe seus resultados e compare com outros jogadores!">
+</head>
+
+<body>
+    <main class="container">
+        <div class="welcome-screen" id="welcomeScreen">
+            <h1>Bem-vindo ao Show do Semiárido!</h1>
+            <div class="input-container">
+                <div class="input-group">
+                    <label for="playerName">Nome do Jogador</label>
+                    <input type="text" id="playerName" placeholder="Digite seu nome" required
+                        aria-label="Digite seu nome">
+                </div>
+                <div class="input-group">
+                    <label for="playerLocation">Cidade</label>
+                    <input type="text" id="playerLocation" placeholder="Digite sua cidade" required
+                        aria-label="Digite sua cidade">
+                </div>
+                <div class="input-group">
+                    <label for="playerLocationStade">Estado</label>
+                    <input type="text" id="playerLocationStade" placeholder="Digite seu Estado" required
+                        aria-label="Digite seu Estado">
+                </div>
+            </div>
+            <button class="start-quiz button" aria-label="Começar o Quiz">Começar</button>
+            <section id="highScoresSection" aria-label="Pontuações mais altas"></section>
+        </div>
+        <div class="questions-container hide" role="region" aria-label="Perguntas do Quiz">
+            <span class="question" role="heading" aria-level="2">Pergunta aqui?</span>
+            <div class="answers-container" role="group" aria-label="Opções de resposta">
+                <button class="answer button" role="button">Resposta 1</button>
+                <button class="answer button" role="button">Resposta 2</button>
+                <button class="answer button" role="button">Resposta 3</button>
+                <button class="answer button" role="button">Resposta 4</button>
+            </div>
+        </div>
+        <div class="controls-container hide">
+            <button class="next-question button hide" aria-label="Ir para próxima pergunta">Próxima pergunta</button>
+            <button class="restart-button hide" aria-label="Reiniciar o Quiz">Reiniciar</button>
+        </div>
+    </main>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=I6sI6Y9N"></script>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
